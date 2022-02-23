@@ -1,0 +1,48 @@
+.intro{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.intro .video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.intro .text_content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 3rem;
+   
+}
+
+.intro .text_content .title{
+  font-size: 3.4rem;
+}
+
+.intro .text_content .text{
+    font-size: 2.4rem;
+    padding: 1.5rem 0 3rem 0;
+}
+
+.intro .text_content .title span{
+    color: var(--primary-blue);
+}
+
+.intro .text-bottom{
+   color: #F4EEFF;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+}

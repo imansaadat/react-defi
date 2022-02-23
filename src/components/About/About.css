@@ -1,0 +1,63 @@
+.about{
+    padding: 4rem 0;
+    background-color: #000;
+}
+
+.about .heading{
+    color: #fff;
+    text-align: center;
+}
+
+.about .heading h2{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.about .heading p{
+    font-size: 1.9rem;
+
+}
+
+.about .cards_container{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem , 1fr));
+    gap: 2rem;
+}
+
+.about .cards_container .card{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3rem;
+    border-radius: 25px;
+}
+
+.about .cards_container .card .card_icon{
+    background-color: var(--primary-blue);
+    display: inline-flex;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.about .cards_container .card .card_icon .icon{
+    font-size: 4rem;
+    color: #000;
+}
+
+.about .cards_container .card .card_title{
+    font-size: 2rem;
+    padding: 1.8rem 0;
+}
+
+.about .cards_container .card .card_text{
+  font-size: 1.8rem;
+}
+
+.about .cards_container .card:hover{
+    transform:scale(1.04);
+}
+
+.about_btn{
+    padding-top: 3rem;
+    text-align: center;
+}

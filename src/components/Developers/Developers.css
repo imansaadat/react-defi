@@ -1,0 +1,39 @@
+.developers{
+    width: 100%;
+    background-color: #000;
+    padding: 10rem 0;
+}
+
+.developers .developers_content{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.developers .developers_content .developers_text{
+    color: #fff;
+    flex: 1 1 45rem;
+}
+
+.developers .developers_content .developers_text .title{
+    font-size: 3rem;
+}
+
+.developers .developers_content .developers_text .text{
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+}
+
+.developers .developers_content .developers_text span{
+    color:var(--primary-blue)
+}
+
+.developers .developers_content .developers_image{
+    flex: 1 1 24rem;
+}
+
+.developers .developers_content .developers_image img{
+    box-shadow: 0px 0px 12px var(--primary-blue);
+    width: 100%;
+}

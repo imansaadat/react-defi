@@ -12,7 +12,7 @@ const Subscribe = () => {
                         <button className="btn">Sign Up</button>
                      </div>
                      <div className='field_block'>
-                        <input type='checkbox'/>
+                        <input type='checkbox' className='checkBox'/>
                         <p className='text'>Yes, I agree to receive email communications from DeFi.</p>
                      </div>
                  </form>

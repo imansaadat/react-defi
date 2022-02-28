@@ -11,7 +11,7 @@ const Developers = () => {
                         <p className='text'>Checkout the <span>documentation</span> , the <span>quick start</span> or a guide below to integrate your project with thousands of tokens and billions of liquidity.</p>
                     </div>
                     <div className='developers_image'>
-                        <img src={developers}/>
+                        <img src={developers} alt='developers'/>
                     </div>
                 </div>
             </div>

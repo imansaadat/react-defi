@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   background-color: #111;
-  padding: 1.5rem 0;
   position: relative;
 }
 
@@ -23,10 +22,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 8rem;
+}
+
+.header .header_content .navbar{
+  display: flex;
+  align-items: center;
 }
 
 .header .header_content .navbar .nav_lists .list_item {
   display: inline-block;
+  cursor: pointer;
 }
 
 .header .header_content .navbar .nav_lists .list_item {
@@ -43,6 +49,7 @@
     left: 0;
     right: 0;
     background-color: #111;
+    flex-direction: column;
   }
   .header .header_content .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);

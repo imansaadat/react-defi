@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import {VscThreeBars} from 'react-icons/vsc'
 import {VscClose} from 'react-icons/vsc'
+import NavLinks from './NavLinks'
+import Button from '../Button/Button'
+import { Link } from 'react-scroll';
 import './Navbar.css'
 const Navbar = () => {
   const [open,setOpen] = useState(false)
@@ -15,12 +18,9 @@ const Navbar = () => {
           <h1 className='logo_name'>Defi</h1>
           <nav className={open ? 'navbar active' : 'navbar'}>
             <ul className='nav_lists'>
-              <li className='list_item'><a href="/">Platform</a></li>
-              <li className='list_item'><a href="/">Developers</a></li>
-              <li className='list_item'><a href="/">Community</a></li>
-              <li className='list_item'><a href="/">About</a></li>
-              <li className='list_item'><a href="/" className='btn'>Use Defi</a></li>
+              <NavLinks />
             </ul>
+            <Button text='Use Defi' BtnType='btn' />
           </nav>
           <div className='hamMenu' onClick={handelMenu}>
               {open ? (<VscClose className='icon'/>):( <VscThreeBars className='icon'/>)}

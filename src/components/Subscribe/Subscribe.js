@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Button/Button'
 import './Subscribe.css'
 const Subscribe = () => {
   return (
@@ -9,11 +10,11 @@ const Subscribe = () => {
                  <form>
                      <div className='field_block'>
                         <input type='email' name='email' className='email' placeholder='Enter your email' />
-                        <button className="btn">Sign Up</button>
+                        <Button text='Sign Up' BtnType='btn outline' />
                      </div>
                      <div className='field_block'>
-                        <input type='checkbox' className='checkBox'/>
-                        <p className='text'>Yes, I agree to receive email communications from DeFi.</p>
+                        <input type='checkbox' id='checkbox' className='checkBox'/>
+                        <label htmlFor='checkbox' className='label'>Yes, I agree to receive email communications from DeFi.</label>
                      </div>
                  </form>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import introVideo from '../../assets/video.mp4'
+import Button from '../Button/Button'
 import './Intro.css'
 const Intro = () => {
     return (
@@ -11,8 +12,8 @@ const Intro = () => {
                 <h2 className='title'>Decentralized<br /><span>Trading </span>Protocol</h2>
                 <p className='text'>Guaranteed liquidity trading for millions of users and top Ethereum applications.</p>
                 <div className='btn-group'>
-                    <button className='btn'>Use Defi</button>
-                    <button className='btn outline'>FAQ</button>
+                  <Button text='Use Defi' BtnType='btn' />
+                  <Button text='FAQ' BtnType='btn outline' />
                 </div>
             </div>
             <div className='text-bottom'>

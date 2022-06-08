@@ -1,0 +1,33 @@
+.btn {
+  font-size: 1.9rem;
+  color: #111;
+  font-weight: 400;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  margin: 0 1rem;
+  border: none;
+  background-image: linear-gradient(
+    45deg,
+    var(--primary-purple) 0%,
+    var(--primary-blue) 100%
+  );
+}
+
+.btn::after{
+  content: none;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.outline{
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+  background: transparent;
+}
+
+.outline:hover{
+  border: 1px solid #fff;
+}

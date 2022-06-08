@@ -39,9 +39,10 @@
   padding: 1rem 0;
 }
 
-.subscribe .subscribe_content .field_block .text {
-  font-size: 1.4rem;
+.subscribe .subscribe_content .field_block .label {
+  font-size: 1.5rem;
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .subscribe .subscribe_content .field_block .email {
@@ -53,6 +54,7 @@
 }
 .subscribe .subscribe_content .field_block .checkBox{
   accent-color: var( --primary-blue);
+  cursor: pointer;
 }
 
 

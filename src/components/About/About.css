@@ -37,6 +37,7 @@
     display: inline-flex;
     padding: 1rem;
     border-radius: 50px;
+    font-size: 3rem;
 }
 
 .about .cards_container .card .card_icon .icon{

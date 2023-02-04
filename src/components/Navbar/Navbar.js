@@ -18,7 +18,7 @@ const Navbar = () => {
           <h1 className='logo_name'>Defi</h1>
           <nav className={open ? 'navbar active' : 'navbar'}>
             <ul className='nav_lists'>
-              <NavLinks />
+              <NavLinks handelMenu={handelMenu} />
             </ul>
             <Button text='Use Defi' BtnType='btn' />
           </nav>

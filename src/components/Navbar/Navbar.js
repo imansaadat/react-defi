@@ -3,7 +3,6 @@ import {VscThreeBars} from 'react-icons/vsc'
 import {VscClose} from 'react-icons/vsc'
 import NavLinks from './NavLinks'
 import Button from '../Button/Button'
-import { Link } from 'react-scroll';
 import './Navbar.css'
 const Navbar = () => {
   const [open,setOpen] = useState(false)

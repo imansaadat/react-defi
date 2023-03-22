@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import { VscThreeBars } from "react-icons/vsc";
-import { VscClose } from "react-icons/vsc";
-import NavLinks from "./NavLinks";
 import Button from "../Button/Button";
-import "./Navbar.css";
-import React, { useState } from 'react'
 import {VscThreeBars} from 'react-icons/vsc'
 import {VscClose} from 'react-icons/vsc'
 import NavLinks from './NavLinks'
-import Button from '../Button/Button'
 import './Navbar.css'
 const Navbar = () => {
   const Links = [

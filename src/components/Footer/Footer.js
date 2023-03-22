@@ -1,59 +1,40 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
+import FooterItem from "./FooterItem";
 const Footer = () => {
+  const FooterLinks = [
+    {
+      title: "Products",
+      names: ["App", "Analytics", "Token Lists", "Defi"],
+    },
+    {
+      title: "Developers",
+      names: ["App", "Analytics", "Token Lists", "Defi"],
+    },
+    {
+      title: "Governance",
+      names: ["App", "Analytics", "Token Lists", "Defi"],
+    },
+    {
+      title: "Community",
+      names: ["App", "Analytics", "Token Lists", "Defi"],
+    },
+    {
+      title: "About",
+      names: ["App", "Analytics", "Token Lists", "Defi"],
+    },
+  ];
   return (
-      <footer className='footer'>
-          <div className='container'>
-            <div className='footer_content'>
-                <div className='col'>
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href='/'>App</a></li>
-                        <li><a href='/'>Analytics</a></li>
-                        <li><a href='/'>Token Lists</a></li>
-                        <li><a href='/'>Defi</a></li>
-                    </ul>
-                </div>
-                <div className='col'>
-                    <h4>Developers</h4>
-                    <ul>
-                        <li><a href='/'>App</a></li>
-                        <li><a href='/'>Analytics</a></li>
-                        <li><a href='/'>Token Lists</a></li>
-                        <li><a href='/'>Defi</a></li>
-                    </ul>
-                </div>
-                <div className='col'>
-                    <h4>Governance</h4>
-                    <ul>
-                        <li><a href='/'>App</a></li>
-                        <li><a href='/'>Analytics</a></li>
-                        <li><a href='/'>Token Lists</a></li>
-                        <li><a href='/'>Defi</a></li>
-                    </ul>
-                </div>
-                <div className='col'>
-                    <h4>Community</h4>
-                    <ul>
-                        <li><a href='/'>App</a></li>
-                        <li><a href='/'>Analytics</a></li>
-                        <li><a href='/'>Token Lists</a></li>
-                        <li><a href='/'>Defi</a></li>
-                    </ul>
-                </div>
-                <div className='col'>
-                    <h4>About</h4>
-                    <ul>
-                        <li><a href='/'>App</a></li>
-                        <li><a href='/'>Analytics</a></li>
-                        <li><a href='/'>Token Lists</a></li>
-                        <li><a href='/'>Defi</a></li>
-                    </ul>
-                </div>
-            </div>
-          </div>
-      </footer>
-  )
-}
+    <footer className="footer">
+      <div className="container">
+        <div className="footer_content">
+            {FooterLinks.map((item, index) => (
+              <FooterItem key={index} item={item}/>
+            ))}
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
